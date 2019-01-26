@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E9ACD692190D26400C5F014 /* libXNI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA9177A146D7E8A00F7D51F /* libXNI.a */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		B505E68C12A5E8180058E857 /* TouchPanelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B505E68A12A5E8180058E857 /* TouchPanelHelper.m */; };
+		B50768FD1264EDAC00E4474F /* FpsComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B50768FB1264EDAC00E4474F /* FpsComponent.m */; };
+		B516D6E612AAA9D300BF0696 /* Fader.m in Sources */ = {isa = PBXBuildFile; fileRef = B516D6E412AAA9D300BF0696 /* Fader.m */; };
+		B5227D9E126DA9DF0079FC24 /* Random.m in Sources */ = {isa = PBXBuildFile; fileRef = B5227D9C126DA9DF0079FC24 /* Random.m */; };
+		B562E7B1130AE61700017D99 /* AccelerometerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B562E7AF130AE61700017D99 /* AccelerometerHelper.m */; };
+		B5964BF51417A7560084E928 /* Artificial.Control.classes.h in Headers */ = {isa = PBXBuildFile; fileRef = B505E68512A5E7EE0058E857 /* Artificial.Control.classes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964BF61417A7560084E928 /* Artificial.Control.h in Headers */ = {isa = PBXBuildFile; fileRef = B505E68712A5E7FB0058E857 /* Artificial.Control.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964BF71417A7560084E928 /* TouchPanelHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B505E68912A5E8180058E857 /* TouchPanelHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964BF81417A7560084E928 /* AccelerometerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B562E7AE130AE61700017D99 /* AccelerometerHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964BF91417A7560084E928 /* Fader.h in Headers */ = {isa = PBXBuildFile; fileRef = B516D6E312AAA9D300BF0696 /* Fader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964BFA1417A7560084E928 /* Artificial.Everywhere.classes.h in Headers */ = {isa = PBXBuildFile; fileRef = B50769641264F27D00E4474F /* Artificial.Everywhere.classes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964BFB1417A7560084E928 /* Artificial.Everywhere.h in Headers */ = {isa = PBXBuildFile; fileRef = B50769661264F29600E4474F /* Artificial.Everywhere.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964BFC1417A7560084E928 /* Rectangle+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F9A19F127B3F0C00CBBDEF /* Rectangle+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964BFD1417A7560084E928 /* FpsComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = B50768FA1264EDAC00E4474F /* FpsComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964BFE1417A7560084E928 /* Random.h in Headers */ = {isa = PBXBuildFile; fileRef = B5227D9B126DA9DF0079FC24 /* Random.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964BFF1417A7560084E928 /* Artificial.Mirage.classes.h in Headers */ = {isa = PBXBuildFile; fileRef = B5ED4DC312BFBE6B00A58E29 /* Artificial.Mirage.classes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964C001417A7560084E928 /* Artificial.Mirage.h in Headers */ = {isa = PBXBuildFile; fileRef = B5ED4DC112BFBE5A00A58E29 /* Artificial.Mirage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964C011417A7560084E928 /* MirageEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FA750512C0D304002DA3E7 /* MirageEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964C021417A7560084E928 /* Label.h in Headers */ = {isa = PBXBuildFile; fileRef = B5ED4DC512BFC2CE00A58E29 /* Label.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964C031417A7560084E928 /* Image.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FA75F312C0EB3D002DA3E7 /* Image.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964C041417A7560084E928 /* Artificial.Spectrum.classes.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F1BC2A1289ED3600E4FDD5 /* Artificial.Spectrum.classes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964C051417A7560084E928 /* Artificial.Spectrum.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F1BC281289ED2800E4FDD5 /* Artificial.Spectrum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5964C061417A7560084E928 /* PrimitiveBatch.h in Headers */ = {isa = PBXBuildFile; fileRef = B5F1BC2C1289ED4B00E4FDD5 /* PrimitiveBatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5ED4DC812BFC2CE00A58E29 /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ED4DC612BFC2CE00A58E29 /* Label.m */; };
+		B5F1BC2F1289ED4B00E4FDD5 /* PrimitiveBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F1BC2D1289ED4B00E4FDD5 /* PrimitiveBatch.m */; };
+		B5F9A1A2127B3F0C00CBBDEF /* Rectangle+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F9A1A0127B3F0C00CBBDEF /* Rectangle+Extensions.m */; };
+		B5FA75F612C0EB3D002DA3E7 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FA75F412C0EB3D002DA3E7 /* Image.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4EA9177A146D7E8A00F7D51F /* libXNI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libXNI.a; path = ../XNI/libXNI.a; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* Artificial_I_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artificial_I_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B505E68512A5E7EE0058E857 /* Artificial.Control.classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artificial.Control.classes.h; sourceTree = "<group>"; };
+		B505E68712A5E7FB0058E857 /* Artificial.Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artificial.Control.h; sourceTree = "<group>"; };
+		B505E68912A5E8180058E857 /* TouchPanelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchPanelHelper.h; sourceTree = "<group>"; };
+		B505E68A12A5E8180058E857 /* TouchPanelHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchPanelHelper.m; sourceTree = "<group>"; };
+		B50768FA1264EDAC00E4474F /* FpsComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FpsComponent.h; sourceTree = "<group>"; };
+		B50768FB1264EDAC00E4474F /* FpsComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FpsComponent.m; sourceTree = "<group>"; };
+		B50769641264F27D00E4474F /* Artificial.Everywhere.classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artificial.Everywhere.classes.h; sourceTree = "<group>"; };
+		B50769661264F29600E4474F /* Artificial.Everywhere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artificial.Everywhere.h; sourceTree = "<group>"; };
+		B516D6E312AAA9D300BF0696 /* Fader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fader.h; sourceTree = "<group>"; };
+		B516D6E412AAA9D300BF0696 /* Fader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fader.m; sourceTree = "<group>"; };
+		B5227D9B126DA9DF0079FC24 /* Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Random.h; sourceTree = "<group>"; };
+		B5227D9C126DA9DF0079FC24 /* Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Random.m; sourceTree = "<group>"; };
+		B562E7AE130AE61700017D99 /* AccelerometerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerHelper.h; sourceTree = "<group>"; };
+		B562E7AF130AE61700017D99 /* AccelerometerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerHelper.m; sourceTree = "<group>"; };
+		B5ED4DC112BFBE5A00A58E29 /* Artificial.Mirage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artificial.Mirage.h; sourceTree = "<group>"; };
+		B5ED4DC312BFBE6B00A58E29 /* Artificial.Mirage.classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artificial.Mirage.classes.h; sourceTree = "<group>"; };
+		B5ED4DC512BFC2CE00A58E29 /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
+		B5ED4DC612BFC2CE00A58E29 /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label.m; sourceTree = "<group>"; };
+		B5F1BC281289ED2800E4FDD5 /* Artificial.Spectrum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artificial.Spectrum.h; sourceTree = "<group>"; };
+		B5F1BC2A1289ED3600E4FDD5 /* Artificial.Spectrum.classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artificial.Spectrum.classes.h; sourceTree = "<group>"; };
+		B5F1BC2C1289ED4B00E4FDD5 /* PrimitiveBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimitiveBatch.h; sourceTree = "<group>"; };
+		B5F1BC2D1289ED4B00E4FDD5 /* PrimitiveBatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimitiveBatch.m; sourceTree = "<group>"; };
+		B5F9A19F127B3F0C00CBBDEF /* Rectangle+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Rectangle+Extensions.h"; sourceTree = "<group>"; };
+		B5F9A1A0127B3F0C00CBBDEF /* Rectangle+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Rectangle+Extensions.m"; sourceTree = "<group>"; };
+		B5FA750512C0D304002DA3E7 /* MirageEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirageEnums.h; sourceTree = "<group>"; };
+		B5FA75F312C0EB3D002DA3E7 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		B5FA75F412C0EB3D002DA3E7 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* libArtificial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libArtificial.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E9ACD692190D26400C5F014 /* libXNI.a in Frameworks */,
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libArtificial.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Artificial I */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = "Artificial I";
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EA9177A146D7E8A00F7D51F /* libXNI.a */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B50768F81264ED3800E4474F /* Artificial */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* Artificial_I_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		B505E68412A5E7C60058E857 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				B505E68512A5E7EE0058E857 /* Artificial.Control.classes.h */,
+				B505E68712A5E7FB0058E857 /* Artificial.Control.h */,
+				B505E68912A5E8180058E857 /* TouchPanelHelper.h */,
+				B505E68A12A5E8180058E857 /* TouchPanelHelper.m */,
+				B562E7AE130AE61700017D99 /* AccelerometerHelper.h */,
+				B562E7AF130AE61700017D99 /* AccelerometerHelper.m */,
+				B516D6E312AAA9D300BF0696 /* Fader.h */,
+				B516D6E412AAA9D300BF0696 /* Fader.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		B50768F81264ED3800E4474F /* Artificial */ = {
+			isa = PBXGroup;
+			children = (
+				B505E68412A5E7C60058E857 /* Control */,
+				B50768F91264ED4E00E4474F /* Everywhere */,
+				B5ED4DC012BFBE2D00A58E29 /* Mirage */,
+				B5F1BC271289ED0F00E4FDD5 /* Spectrum */,
+			);
+			path = Artificial;
+			sourceTree = "<group>";
+		};
+		B50768F91264ED4E00E4474F /* Everywhere */ = {
+			isa = PBXGroup;
+			children = (
+				B50769641264F27D00E4474F /* Artificial.Everywhere.classes.h */,
+				B50769661264F29600E4474F /* Artificial.Everywhere.h */,
+				B5F9A1A3127B3F1000CBBDEF /* Extensions */,
+				B50768FA1264EDAC00E4474F /* FpsComponent.h */,
+				B50768FB1264EDAC00E4474F /* FpsComponent.m */,
+				B5227D9B126DA9DF0079FC24 /* Random.h */,
+				B5227D9C126DA9DF0079FC24 /* Random.m */,
+			);
+			path = Everywhere;
+			sourceTree = "<group>";
+		};
+		B5ED4DC012BFBE2D00A58E29 /* Mirage */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED4DC312BFBE6B00A58E29 /* Artificial.Mirage.classes.h */,
+				B5ED4DC112BFBE5A00A58E29 /* Artificial.Mirage.h */,
+				B5FA750512C0D304002DA3E7 /* MirageEnums.h */,
+				B5ED4DC512BFC2CE00A58E29 /* Label.h */,
+				B5ED4DC612BFC2CE00A58E29 /* Label.m */,
+				B5FA75F312C0EB3D002DA3E7 /* Image.h */,
+				B5FA75F412C0EB3D002DA3E7 /* Image.m */,
+			);
+			path = Mirage;
+			sourceTree = "<group>";
+		};
+		B5F1BC271289ED0F00E4FDD5 /* Spectrum */ = {
+			isa = PBXGroup;
+			children = (
+				B5F1BC2A1289ED3600E4FDD5 /* Artificial.Spectrum.classes.h */,
+				B5F1BC281289ED2800E4FDD5 /* Artificial.Spectrum.h */,
+				B5F1BC2C1289ED4B00E4FDD5 /* PrimitiveBatch.h */,
+				B5F1BC2D1289ED4B00E4FDD5 /* PrimitiveBatch.m */,
+			);
+			path = Spectrum;
+			sourceTree = "<group>";
+		};
+		B5F9A1A3127B3F1000CBBDEF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5F9A19F127B3F0C00CBBDEF /* Rectangle+Extensions.h */,
+				B5F9A1A0127B3F0C00CBBDEF /* Rectangle+Extensions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B5964BF41417A7270084E928 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5964BF51417A7560084E928 /* Artificial.Control.classes.h in Headers */,
+				B5964BF61417A7560084E928 /* Artificial.Control.h in Headers */,
+				B5964BF71417A7560084E928 /* TouchPanelHelper.h in Headers */,
+				B5964BF81417A7560084E928 /* AccelerometerHelper.h in Headers */,
+				B5964BF91417A7560084E928 /* Fader.h in Headers */,
+				B5964BFA1417A7560084E928 /* Artificial.Everywhere.classes.h in Headers */,
+				B5964BFB1417A7560084E928 /* Artificial.Everywhere.h in Headers */,
+				B5964BFC1417A7560084E928 /* Rectangle+Extensions.h in Headers */,
+				B5964BFD1417A7560084E928 /* FpsComponent.h in Headers */,
+				B5964BFE1417A7560084E928 /* Random.h in Headers */,
+				B5964BFF1417A7560084E928 /* Artificial.Mirage.classes.h in Headers */,
+				B5964C001417A7560084E928 /* Artificial.Mirage.h in Headers */,
+				B5964C011417A7560084E928 /* MirageEnums.h in Headers */,
+				B5964C021417A7560084E928 /* Label.h in Headers */,
+				B5964C031417A7560084E928 /* Image.h in Headers */,
+				B5964C041417A7560084E928 /* Artificial.Spectrum.classes.h in Headers */,
+				B5964C051417A7560084E928 /* Artificial.Spectrum.h in Headers */,
+				B5964C061417A7560084E928 /* PrimitiveBatch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* Artificial I */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Artificial I" */;
+			buildPhases = (
+				B5964BF41417A7270084E928 /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Artificial I";
+			productName = "Artificial I";
+			productReference = D2AAC07E0554694100DB518D /* libArtificial.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Artificial I" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Artificial I */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* Artificial I */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50768FD1264EDAC00E4474F /* FpsComponent.m in Sources */,
+				B5227D9E126DA9DF0079FC24 /* Random.m in Sources */,
+				B5F9A1A2127B3F0C00CBBDEF /* Rectangle+Extensions.m in Sources */,
+				B5F1BC2F1289ED4B00E4FDD5 /* PrimitiveBatch.m in Sources */,
+				B505E68C12A5E8180058E857 /* TouchPanelHelper.m in Sources */,
+				B516D6E612AAA9D300BF0696 /* Fader.m in Sources */,
+				B5ED4DC812BFC2CE00A58E29 /* Label.m in Sources */,
+				B5FA75F612C0EB3D002DA3E7 /* Image.m in Sources */,
+				B562E7B1130AE61700017D99 /* AccelerometerHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Artificial_I.dst;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Artificial_I_Prefix.pch;
+				GCC_VERSION = "";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../XNI\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Artificial;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../\"/**";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				DSTROOT = /tmp/Artificial_I.dst;
+				EXECUTABLE_PREFIX = lib;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Artificial_I_Prefix.pch;
+				GCC_VERSION = "";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../XNI\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Artificial;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../\"/**";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Artificial I" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Artificial I" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

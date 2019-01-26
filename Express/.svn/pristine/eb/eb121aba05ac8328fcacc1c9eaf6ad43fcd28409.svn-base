@@ -1,0 +1,20 @@
+//
+//  SimpleScene.h
+//  Express
+//
+//  Created by Matej Jan on 2.11.10.
+//  Copyright 2010 Retronator. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#import "IScene.h"
+
+/**
+ A simple scene implementation that just uses an array as its backing.
+ */
+@interface SimpleScene : NSObject <IScene> {
+	NSMutableArray *items;
+}
+
+@end

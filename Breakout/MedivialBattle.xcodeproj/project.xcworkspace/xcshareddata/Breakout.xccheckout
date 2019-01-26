@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>10C0EDCC-3950-4250-BE55-23479514652C</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>46ac7656-7fdb-7441-83b5-3b0ef9f14829++6612</key>
+		<string>https://gameteam.fri.uni-lj.si:8443/svn/gameteam/tinr/matej_jan/Express</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>46ac7656-7fdb-7441-83b5-3b0ef9f14829++6612</key>
+		<string>Express/</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>46ac7656-7fdb-7441-83b5-3b0ef9f14829++6612</key>
+		<string>https://gameteam.fri.uni-lj.si:8443/svn/gameteam</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://gameteam.fri.uni-lj.si:8443/svn/gameteam/tinr/matej_jan/Express</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>46ac7656-7fdb-7441-83b5-3b0ef9f14829++6612</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>46ac7656-7fdb-7441-83b5-3b0ef9f14829++6612</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Express</string>
+		</dict>
+	</array>
+</dict>
+</plist>
