@@ -34,7 +34,7 @@
 @property (nonatomic, readonly) float defaultCharacterSpeed; // kako hitro se character premika
 @property (nonatomic, readonly) float defaultCharacterJumpHeight; // kako visoko lahko igralec skoči
 
-
+@property (nonatomic, readonly) NSString* progressFilePath; // path za saving
 
 + (Constants*) getInstance;
 + (void) setGroundY: (float) cord;

@@ -110,14 +110,14 @@
         fireball.velocity.y = 0;
         [fireball setFiredBy:@"enemy"];
     }
-    NSLog(@"[addFireball] fireball.pos.x: %f, hero.pos.x: %f", fireball.position.x, hero.position.x);
+//    NSLog(@"[addFireball] fireball.pos.x: %f, hero.pos.x: %f", fireball.position.x, hero.position.x);
     [scene addItem:fireball];
 }
 
 - (void) reinitializeObjects {
     [hero reset];
     [enemy reset];
-    [scene addItem:hero];
+    //[scene addItem:hero];
     NSLog(@"[level reinitializeObjects] done!");
 }
 

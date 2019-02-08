@@ -35,6 +35,7 @@
 @property (nonatomic, readwrite) float speedX; // hitrost premikanja po x-osi
 @property (nonatomic, readwrite) float jumpY; // hitrost premikanja oo Y osi oz. skok
 @property (nonatomic, retain) ItemSword* myWeapon; // characterjovo orožje tipa ItemSword
+@property (nonatomic, readwrite) int numberOfHitsReceived; // število hitov, ki jih je character utrpl
 
 - (id) initWithWeapon: (ItemSword*)theSword; // character ve, kateri weapon uporablja, weaponi so swordi
 

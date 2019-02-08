@@ -28,6 +28,7 @@
 - (void) collidedWithItem:(id)item {
     if ([item isKindOfClass:[FireBall class]] || [item isKindOfClass:[ItemSword class]]){
         if (!blockAttack) {
+            self.numberOfHitsReceived += 1;
             health -= [item getDamagePower];
             NSLog(@"enemy hit, health remaining: %f", health);
             if (health <= 0) {

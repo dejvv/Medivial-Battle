@@ -18,12 +18,22 @@
 		6326E56421BD218E0040188D /* footstep00.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6326E56221BD218E0040188D /* footstep00.wav */; };
 		6326E56A21BEB3620040188D /* atlas_ui.png in Resources */ = {isa = PBXBuildFile; fileRef = 6326E56921BEB3610040188D /* atlas_ui.png */; };
 		6326E56D21BFC2990040188D /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326E56C21BFC2990040188D /* Constants.m */; };
+		63395B6721FF720A0044FCD4 /* GameProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 63395B6621FF720A0044FCD4 /* GameProgress.m */; };
+		63395B6A21FFAE610044FCD4 /* ReflexEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63395B6921FFAE610044FCD4 /* ReflexEnemy.m */; };
+		63395B6C2200F3680044FCD4 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63395B6B2200F3680044FCD4 /* music.mp3 */; };
 		633F7E2621C86224000AC998 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F7E2521C86224000AC998 /* Player.m */; };
 		633F7E2A21C86352000AC998 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F7E2921C86352000AC998 /* Character.m */; };
 		6369811F21C051C800D585C8 /* ResolveGravity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6369811E21C051C800D585C8 /* ResolveGravity.m */; };
 		6369812521C1521500D585C8 /* ItemSword.m in Sources */ = {isa = PBXBuildFile; fileRef = 6369812421C1521500D585C8 /* ItemSword.m */; };
 		6374685321FB24B000F06DF3 /* enemy_health_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6374685221FB24B000F06DF3 /* enemy_health_bar.png */; };
 		6374685C21FCE14900F06DF3 /* GameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6374685B21FCE14900F06DF3 /* GameState.m */; };
+		6374686121FCEF9C00F06DF3 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6374686021FCEF9C00F06DF3 /* Menu.m */; };
+		6374686621FCF33F00F06DF3 /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6374686521FCF33F00F06DF3 /* MainMenu.m */; };
+		6374686821FCF4B100F06DF3 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6374686721FCF4B100F06DF3 /* Button.png */; };
+		6374686B21FCF56200F06DF3 /* PlayGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6374686A21FCF56200F06DF3 /* PlayGame.m */; };
+		6374686E21FCF58000F06DF3 /* OpponentSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6374686D21FCF58000F06DF3 /* OpponentSelection.m */; };
+		6374687121FCF59300F06DF3 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6374687021FCF59300F06DF3 /* Settings.m */; };
+		637C65D5220107BA001FF08B /* music_menu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 637C65D4220107BA001FF08B /* music_menu.mp3 */; };
 		638AF58821AC7690004A99F0 /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 638AF58721AC7690004A99F0 /* Renderer.m */; };
 		638AF58B21AC8BA0004A99F0 /* FireBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 638AF58A21AC8BA0004A99F0 /* FireBall.m */; };
 		638AF58E21AC99AB004A99F0 /* LevelLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 638AF58D21AC99AB004A99F0 /* LevelLimit.m */; };
@@ -94,6 +104,12 @@
 		6326E56B21BFC2880040188D /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		6326E56C21BFC2990040188D /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		6326E56E21C049F00040188D /* DGravity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGravity.h; sourceTree = "<group>"; };
+		63395B6521FF71ED0044FCD4 /* GameProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameProgress.h; sourceTree = "<group>"; };
+		63395B6621FF720A0044FCD4 /* GameProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameProgress.m; sourceTree = "<group>"; };
+		63395B6821FFAE560044FCD4 /* ReflexEnemy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReflexEnemy.h; sourceTree = "<group>"; };
+		63395B6921FFAE610044FCD4 /* ReflexEnemy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReflexEnemy.m; sourceTree = "<group>"; };
+		63395B6B2200F3680044FCD4 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		63395B6E2200FA470044FCD4 /* SongType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongType.h; sourceTree = "<group>"; };
 		633F7E2321C86207000AC998 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		633F7E2521C86224000AC998 /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		633F7E2821C86349000AC998 /* Character.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
@@ -105,6 +121,18 @@
 		6374685221FB24B000F06DF3 /* enemy_health_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy_health_bar.png; sourceTree = "<group>"; };
 		6374685921FCE13500F06DF3 /* GameState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
 		6374685B21FCE14900F06DF3 /* GameState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameState.m; sourceTree = "<group>"; };
+		6374685F21FCEF8C00F06DF3 /* Menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		6374686021FCEF9C00F06DF3 /* Menu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		6374686421FCF33300F06DF3 /* MainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
+		6374686521FCF33F00F06DF3 /* MainMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
+		6374686721FCF4B100F06DF3 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		6374686921FCF55700F06DF3 /* PlayGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayGame.h; sourceTree = "<group>"; };
+		6374686A21FCF56200F06DF3 /* PlayGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayGame.m; sourceTree = "<group>"; };
+		6374686C21FCF57400F06DF3 /* OpponentSelection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpponentSelection.h; sourceTree = "<group>"; };
+		6374686D21FCF58000F06DF3 /* OpponentSelection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpponentSelection.m; sourceTree = "<group>"; };
+		6374686F21FCF58A00F06DF3 /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		6374687021FCF59300F06DF3 /* Settings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		637C65D4220107BA001FF08B /* music_menu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music_menu.mp3; sourceTree = "<group>"; };
 		638AF58621AC767D004A99F0 /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
 		638AF58721AC7690004A99F0 /* Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
 		638AF58921AC8B96004A99F0 /* FireBall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FireBall.h; sourceTree = "<group>"; };
@@ -193,6 +221,7 @@
 			children = (
 				6326E55521BBF4970040188D /* Sounds */,
 				63D23D3C21D256B600706F8F /* 5x5.bmp */,
+				6374686721FCF4B100F06DF3 /* Button.png */,
 				63D23D3B21D256B600706F8F /* health_bar.png */,
 				63D23D3F21D3064400706F8F /* energy_bar.png */,
 				6374685221FB24B000F06DF3 /* enemy_health_bar.png */,
@@ -261,6 +290,7 @@
 				6326E55121BBF3340040188D /* SoundEffectType.h */,
 				6326E55221BBF3660040188D /* SoundEngine.h */,
 				6326E55321BBF3BA0040188D /* SoundEngine.m */,
+				63395B6E2200FA470044FCD4 /* SongType.h */,
 			);
 			name = Audio;
 			sourceTree = "<group>";
@@ -268,6 +298,8 @@
 		6326E55521BBF4970040188D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				637C65D4220107BA001FF08B /* music_menu.mp3 */,
+				63395B6B2200F3680044FCD4 /* music.mp3 */,
 				6326E56221BD218E0040188D /* footstep00.wav */,
 				6326E56121BD218E0040188D /* footstep01.wav */,
 				6326E55A21BBF8130040188D /* FireBallShot.wav */,
@@ -297,10 +329,28 @@
 		6374685821FCE12400F06DF3 /* Game states */ = {
 			isa = PBXGroup;
 			children = (
+				6374685E21FCEC8200F06DF3 /* Menus */,
 				6374685921FCE13500F06DF3 /* GameState.h */,
 				6374685B21FCE14900F06DF3 /* GameState.m */,
 			);
 			name = "Game states";
+			sourceTree = "<group>";
+		};
+		6374685E21FCEC8200F06DF3 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				6374685F21FCEF8C00F06DF3 /* Menu.h */,
+				6374686021FCEF9C00F06DF3 /* Menu.m */,
+				6374686421FCF33300F06DF3 /* MainMenu.h */,
+				6374686521FCF33F00F06DF3 /* MainMenu.m */,
+				6374686921FCF55700F06DF3 /* PlayGame.h */,
+				6374686A21FCF56200F06DF3 /* PlayGame.m */,
+				6374686C21FCF57400F06DF3 /* OpponentSelection.h */,
+				6374686D21FCF58000F06DF3 /* OpponentSelection.m */,
+				6374686F21FCF58A00F06DF3 /* Settings.h */,
+				6374687021FCF59300F06DF3 /* Settings.m */,
+			);
+			name = Menus;
 			sourceTree = "<group>";
 		};
 		63B7D3CB21AC055B00D8FDE3 /* AI */ = {
@@ -308,6 +358,8 @@
 			children = (
 				63B7D3C521AC055500D8FDE3 /* EnemyPlayer.h */,
 				63B7D3C621AC055500D8FDE3 /* EnemyPlayer.m */,
+				63395B6821FFAE560044FCD4 /* ReflexEnemy.h */,
+				63395B6921FFAE610044FCD4 /* ReflexEnemy.m */,
 			);
 			name = AI;
 			sourceTree = "<group>";
@@ -362,6 +414,8 @@
 				63B7D3D821AC06D400D8FDE3 /* Igra.m */,
 				6326E56B21BFC2880040188D /* Constants.h */,
 				6326E56C21BFC2990040188D /* Constants.m */,
+				63395B6521FF71ED0044FCD4 /* GameProgress.h */,
+				63395B6621FF720A0044FCD4 /* GameProgress.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -511,8 +565,11 @@
 			files = (
 				6326E56321BD218E0040188D /* footstep01.wav in Resources */,
 				63B7D3BD21AC04F500D8FDE3 /* background_village.png in Resources */,
+				637C65D5220107BA001FF08B /* music_menu.mp3 in Resources */,
+				63395B6C2200F3680044FCD4 /* music.mp3 in Resources */,
 				63D23D3E21D256B600706F8F /* 5x5.bmp in Resources */,
 				63B7D3C021AC04F500D8FDE3 /* background.png in Resources */,
+				6374686821FCF4B100F06DF3 /* Button.png in Resources */,
 				63B7D3BF21AC04F500D8FDE3 /* atlas.png in Resources */,
 				6326E55B21BBF8140040188D /* FireBallShot.wav in Resources */,
 				63B7D3BE21AC04F500D8FDE3 /* background_big.png in Resources */,
@@ -540,17 +597,23 @@
 				63D23D3A21D242F000706F8F /* ButtonHud.m in Sources */,
 				6369811F21C051C800D585C8 /* ResolveGravity.m in Sources */,
 				63D23D3221D1AEC500706F8F /* GuiRenderer.m in Sources */,
+				6374687121FCF59300F06DF3 /* Settings.m in Sources */,
+				63395B6721FF720A0044FCD4 /* GameProgress.m in Sources */,
 				638AF58B21AC8BA0004A99F0 /* FireBall.m in Sources */,
 				B52B97341291A7A000AC27AA /* Level.m in Sources */,
+				6374686E21FCF58000F06DF3 /* OpponentSelection.m in Sources */,
 				63D23D3721D242D300706F8F /* GameHud.m in Sources */,
+				6374686B21FCF56200F06DF3 /* PlayGame.m in Sources */,
 				638AF59121AC9D9F004A99F0 /* Physics.m in Sources */,
 				63B7D3CA21AC055500D8FDE3 /* HumanPlayer.m in Sources */,
+				6374686121FCEF9C00F06DF3 /* Menu.m in Sources */,
 				6326E56D21BFC2990040188D /* Constants.m in Sources */,
 				6326E55421BBF3BA0040188D /* SoundEngine.m in Sources */,
 				638AF58821AC7690004A99F0 /* Renderer.m in Sources */,
 				633F7E2A21C86352000AC998 /* Character.m in Sources */,
 				63B7D3C921AC055500D8FDE3 /* EnemyPlayer.m in Sources */,
 				638AF59421AC9F52004A99F0 /* Gameplay.m in Sources */,
+				63395B6A21FFAE610044FCD4 /* ReflexEnemy.m in Sources */,
 				63B7D3D521AC05A100D8FDE3 /* Button.m in Sources */,
 				63B7D3D921AC06D400D8FDE3 /* Igra.m in Sources */,
 				63D23D2821CBB2BE00706F8F /* Transformation2d.m in Sources */,
@@ -559,6 +622,7 @@
 				6369812521C1521500D585C8 /* ItemSword.m in Sources */,
 				633F7E2621C86224000AC998 /* Player.m in Sources */,
 				63B7D3D421AC05A100D8FDE3 /* Enemy.m in Sources */,
+				6374686621FCF33F00F06DF3 /* MainMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

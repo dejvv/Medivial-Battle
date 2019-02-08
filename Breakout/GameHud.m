@@ -24,7 +24,7 @@
     return self;
 }
 
-@synthesize scene, healthBarButtonHud, energyBarButtonHud, enemyHealthBarButtonHud, enemeyEnergyBarButtonHud, finishMessage;
+@synthesize scene, healthBarButtonHud, energyBarButtonHud, enemyHealthBarButtonHud, enemeyEnergyBarButtonHud, finishMessage, playerScore, time;
 
 - (void) initialize {
     FontTextureProcessor *fontProcessor = [[[FontTextureProcessor alloc] init] autorelease];
@@ -32,21 +32,32 @@
     
     // for hero
     healthBarTexture = [self.game.content load:@"health_bar"];
-    healthBarButtonHud = [[ButtonHud alloc] initWithInputArea:[[Rectangle rectangleWithX:20 y:20 width:128 height:16] retain] background:healthBarTexture font:font text:@""];
+    healthBarButtonHud = [[ButtonHud alloc] initWithInputArea:[[Rectangle rectangleWithX:20 y:20 width:128 height:20] retain] background:healthBarTexture font:font text:@""];
     
     energyBarTexture = [self.game.content load:@"energy_bar"];
-    energyBarButtonHud = [[ButtonHud alloc] initWithInputArea:[[Rectangle rectangleWithX:20 y:60 width:128 height:16] retain] background:energyBarTexture font:font text:@""];
+    energyBarButtonHud = [[ButtonHud alloc] initWithInputArea:[[Rectangle rectangleWithX:20 y:60 width:128 height:20] retain] background:energyBarTexture font:font text:@""];
     
     // for enemy
     enemyHealthBarTexture = [self.game.content load:@"enemy_health_bar"];
-    enemyHealthBarButtonHud = [[ButtonHud alloc] initWithInputArea:[[Rectangle rectangleWithX: 724 y:20 width:128 height:16] retain] background:enemyHealthBarTexture font:font text:@""];
+    enemyHealthBarButtonHud = [[ButtonHud alloc] initWithInputArea:[[Rectangle rectangleWithX: 724 y:20 width:128 height:20] retain] background:enemyHealthBarTexture font:font text:@""];
     
     //enemyEnergyBarTexture = [self.game.content load:@"energy_bar"];
-    enemeyEnergyBarButtonHud = [[ButtonHud alloc] initWithInputArea:[[Rectangle rectangleWithX: 724 y:60 width:128 height:16] retain] background:energyBarTexture font:font text:@""];
+    enemeyEnergyBarButtonHud = [[ButtonHud alloc] initWithInputArea:[[Rectangle rectangleWithX: 724 y:60 width:128 height:20] retain] background:energyBarTexture font:font text:@""];
     
     // won/lost message
     finishMessage = [[ButtonHud alloc] initWithInputArea:[[Rectangle rectangleWithX: 280 y:180 width:100 height:100] retain] background:nil font:font text:@""];
     [finishMessage setLabelColor:[Color white]];
+    
+    // score
+    playerScore = [[Label alloc] initWithFont:font text:@"Score: 0" position:[Vector2 vectorWithX:20 y:110]];
+    [playerScore setScaleUniform:1.125];
+    [playerScore setColor:[Color white]];
+    // time
+    time = [[Label alloc] initWithFont:font text:@"Time: 0" position:[Vector2 vectorWithX:480 y:40]];
+    [time setHorizontalAlign:HorizontalAlignCenter];
+    [time setScaleUniform:1.125];
+    [time setColor:[Color white]];
+
 }
 
 - (void) updateWithGameTime:(GameTime *)gameTime {
@@ -71,6 +82,8 @@
     [scene addItem:enemyHealthBarButtonHud];
     [scene addItem:enemeyEnergyBarButtonHud];
     [scene addItem:finishMessage];
+    [scene addItem:playerScore];
+    [scene addItem:time];
 }
 
 - (void) dealloc {
@@ -85,6 +98,9 @@
     [enemyEnergyBarTexture release];
     
     [finishMessage release];
+    
+    [playerScore release];
+    [time release];
     [super dealloc];
 }
 

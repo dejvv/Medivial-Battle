@@ -34,18 +34,25 @@
 @class Player;
 @class HumanPlayer;
 @class EnemyPlayer;
+@class ReflexEnemy;
 
 // GamePlay
 @class GameState;
 @class Gameplay;
+@class Menu;
+@class MainMenu;
+@class PlayGame;
+@class OpponentSelection;
+@class Settings;
 
 // Sound
 #import "SoundEffectType.h"
+#import "SongType.h"
 @class SoundEngine;
 
 // Game
 @class Igra;
 @class Constants;
-
+@class GameProgress;
 
 

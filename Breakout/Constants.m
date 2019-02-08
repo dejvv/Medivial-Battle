@@ -43,7 +43,7 @@ static float groundYcord;
 }
 
 - (float) costEnergyFireBall {
-    return 50.0;
+    return 25.0;
 }
 
 - (float) costEnergySwordAttack {
@@ -75,7 +75,7 @@ static float groundYcord;
 }
 
 - (float) defaultValueEnergyRegeneration {
-    return 5.3;
+    return 7.5;
 }
 
 - (float) defaultValueEnergy {
@@ -90,5 +90,8 @@ static float groundYcord;
     return -600.0;
 }
 
+- (NSString*) progressFilePath {
+    return @"MedivialBattleSave";
+}
 
 @end

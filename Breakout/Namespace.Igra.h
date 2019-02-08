@@ -36,16 +36,24 @@
 #import "Player.h"
 #import "HumanPlayer.h"
 #import "EnemyPlayer.h"
+#import "ReflexEnemy.h"
 
 // Gameplay, menus, state 
 #import "GameState.h"
 #import "Gameplay.h"
+#import "Menu.h"
+#import "MainMenu.h"
+#import "PlayGame.h"
+#import "OpponentSelection.h"
+#import "Settings.h"
 
 // Sound
 #import "SoundEffectType.h"
+#import "SongType.h"
 #import "SoundEngine.h"
 
 // Game
 #import "Igra.h"
 #import "Constants.h"
+#import "GameProgress.h"
 

@@ -35,6 +35,9 @@
 
 @property (nonatomic, retain) ButtonHud *finishMessage; // you either won(enemy died) or lost (you died) and that message is displayed then
 
+@property (nonatomic, retain) Label *playerScore; // score of player
+@property (nonatomic, retain) Label *time; // display total gameTime in seconds
+
 - (void) resetGui; // doda gui na novo na sceno
 
 @end

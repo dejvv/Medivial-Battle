@@ -23,9 +23,19 @@
 }
 
 - (void) initialize {
-    float scaleX = (float)self.game.gameWindow.clientBounds.width / (float)gameplay.level.bounds.width;
-    float scaleY = (float)self.game.gameWindow.clientBounds.height / (float)gameplay.level.bounds.height;
+    float scaleX = 1;
+    float scaleY = 1;
+    if (gameplay == nil) {
+        float aspectRatio = (float)self.game.gameWindow.clientBounds.width / (float)self.game.gameWindow.clientBounds.height;
+        Rectangle *bounds = [[Rectangle alloc] initWithX:0 y:0 width:1000 height:1000/aspectRatio];
+        scaleX = (float)self.game.gameWindow.clientBounds.width / bounds.width;
+        scaleY = (float)self.game.gameWindow.clientBounds.height / bounds.height;
+    } else {
+        scaleX = (float)self.game.gameWindow.clientBounds.width / (float)gameplay.level.bounds.width;
+        scaleY = (float)self.game.gameWindow.clientBounds.height / (float)gameplay.level.bounds.height;
+    }
     camera = [[Matrix createScale:[Vector3 vectorWithX:scaleX y:scaleY z:1]] retain];
+    NSLog(@"[GuiRenderer] scalex: %f, scaley: %f", scaleX, scaleY);
     [super initialize];
 }
 
@@ -34,7 +44,7 @@
 }
 
 - (void) drawWithGameTime:(GameTime *)gameTime {
-    //NSLog(@"[guiRenderer] drawWithGameTime");
+//    NSLog(@"[guiRenderer] drawWithGameTime");
     [spriteBatch beginWithSortMode:SpriteSortModeDeffered
                         BlendState:nil
                       SamplerState:[SamplerState pointClamp]
@@ -48,11 +58,13 @@
         Image *image = [item isKindOfClass:[Image class]] ? item : nil;
         
         if (label) {
+//            NSLog(@"[guiRenderer] drawWithGameTime - LABEL");
             [spriteBatch drawStringWithSpriteFont:label.font text:label.text to:label.position tintWithColor:label.color
                                          rotation:label.rotation origin:label.origin scale:label.scale effects:SpriteEffectsNone layerDepth:label.layerDepth];
         }
         
         if (image) {
+//            NSLog(@"[guiRenderer] drawWithGameTime - IMAGE");
             [spriteBatch draw:image.texture to:image.position fromRectangle:image.sourceRectangle tintWithColor:image.color
                      rotation:image.rotation origin:image.origin scale:image.scale effects:SpriteEffectsNone layerDepth:image.layerDepth];
         }

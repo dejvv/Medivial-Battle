@@ -32,6 +32,7 @@
         blocked = NO;
         [self setSpeedX:[Constants getInstance].defaultCharacterSpeed];
         [self setJumpY:[Constants getInstance].defaultCharacterJumpHeight];
+        numberOfHitsReceived = 0;
     }
     return self;
 }
@@ -60,6 +61,7 @@
         [self setJumpY:[Constants getInstance].defaultCharacterJumpHeight];
         
         myWeapon = theSword;
+        numberOfHitsReceived = 0;
     }
     return self;
 }
@@ -74,8 +76,12 @@
 @synthesize speedX; // hitrost premikanja po x-osi
 @synthesize jumpY; // hitros premikanja po y-osi oz. hitrost skoka
 @synthesize myWeapon; // orožje
+@synthesize numberOfHitsReceived; // število prejetih hitov
 
 - (void)updateWithGameTime:(GameTime *)gameTime {
+    // če je character umrl ne izvajaj več tega
+    if (![self isAlive])
+        return;
     // če je character pod groundom nemore skočit, če pa ni, mu pa nastavimo vrednost y za gravitacijski vektor (userMass) na vrednost mase
     // enka je nek offset
     if (position.y + height / 2 + 1 >= [Constants getInstance].groundY) {
@@ -108,6 +114,8 @@
         //NSLog(@"character regenerated energy %f", energy);
     }
 }
+
+
 
 - (bool) isAlive {
     return health > 0;
@@ -208,6 +216,7 @@
     blocked = NO;
     [self setSpeedX:[Constants getInstance].defaultCharacterSpeed];
     [self setJumpY:[Constants getInstance].defaultCharacterJumpHeight];
+    numberOfHitsReceived = 0;
 }
 
 - (void) dealloc

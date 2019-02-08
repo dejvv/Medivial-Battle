@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Namespace.Igra.h"
-#import "HumanPlayer.h"
+#import "EnemyPlayer.h"
 
 @implementation EnemyPlayer
 
@@ -38,17 +38,17 @@
     // do action every 2s
     if ( fabs(doAction - gameTime.totalGameTime) >= 2.0 ){
         doAction = gameTime.totalGameTime;
-        // if enemy has enaugh energy he can shot fireball
-        if ([self shouldShootFireBall:gameTime]) {
-            shootFireball = YES;
-            stopBecauseOfFireBallShot = gameTime.totalGameTime + 0.25;
-        } else if ([self shouldAttackWithSword:gameTime]) {
+        if ([self shouldAttackWithSword:gameTime]) {
             [enemy setSwordAttack:YES];
             [enemy.myWeapon setDetectCollision:YES];
             //NSLog(@"enemy is attacking with sword, his energy: %f", enemy.getEnergy);
             attackedWithSword = YES;
             // when should enemy attack ends
             endOfSwordAttack = gameTime.totalGameTime + [Constants getInstance].swordAttackDuration;
+        // if enemy has enaugh energy he can shot fireball
+        } else if ([self shouldShootFireBall:gameTime]) {
+            shootFireball = YES;
+            stopBecauseOfFireBallShot = gameTime.totalGameTime + 0.25;
         } else {
             if (enemy.getSwordAttack){
                 [enemy setSwordAttack:NO];
@@ -65,7 +65,7 @@
             [enemy setSwordAttack:NO];
             [enemy.myWeapon setDetectCollision:NO];
         }
-    
+    */
     if ([[self whereToMove:gameTime] isEqual:@"left"]){
         [enemy setOrientation:@"left"];
         enemy.velocity.x = -enemy.speedX;
@@ -82,7 +82,7 @@
             [enemy setJumped:YES];
         }
     }
-    */
+    /**/
 }
 
 - (BOOL) shouldJump {
@@ -158,16 +158,16 @@
     if (enemy.getSwordAttack || (stopBecauseOfFireBallShot - gameTime.totalGameTime) > 0)
         currentMovementDirection = @"nowhere"; // for standing still
     else if ([currentMovementDirection isEqual:@"nowhere"])
-//        currentMovementDirection = arc4random() % 100 > 50 ? @"left" : @"right";
-        currentMovementDirection = [enemy getOrientation];
+        currentMovementDirection = arc4random() % 100 > 50 ? @"left" : @"right";
+//        currentMovementDirection = [enemy getOrientation];
     return currentMovementDirection;
 }
 
 @synthesize currentMovementDirection;
 
 - (void) dealloc {
-    [enemy release];
-    [level release];
+    //[enemy release];
+    //[level release];
     [super dealloc];
 }
 

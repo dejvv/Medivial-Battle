@@ -75,7 +75,7 @@
             [hero setSwordAttack:YES];
             [hero.myWeapon setDetectCollision:YES];
             [hero setTimeIntervalSwordAttack:gameTime.totalGameTime];
-            NSLog(@"attack start: %f", attackDuration);
+//            NSLog(@"attack start: %f", attackDuration);
             [hero setEnergy:hero.getEnergy - [Constants getInstance].costEnergySwordAttack * hero.myWeapon.energyPenalty];
             if (hero.getEnergy < 0)
                 [hero setEnergy:0];
@@ -85,7 +85,7 @@
         if (hero.getSwordAttack && (fabs(gameTime.totalGameTime - [hero getTimeIntervalSwordAttack]) >= [Constants getInstance].swordAttackDuration)){
             [hero setSwordAttack:NO];
             [hero.myWeapon setDetectCollision:NO];
-            NSLog(@"attack end: %f", gameTime.totalGameTime);
+//            NSLog(@"attack end: %f", gameTime.totalGameTime);
         }
     }
     //NSLog(@"player attacking: gametime.elapsed: %f %f", gameTime.totalGameTime, fabs(gameTime.totalGameTime - attackDuration));
@@ -150,8 +150,8 @@
 
 - (void) dealloc {
     [inverseView release];
-    [hero release];
-    [level release];
+    //[hero release];
+    //[level release];
     [super dealloc];
 }
 

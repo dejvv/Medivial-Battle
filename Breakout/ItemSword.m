@@ -124,7 +124,7 @@
     [v2 release];
     [v3 release];
     [v4 release];
-    [character release];
+    //[character release];
     [scene release];
     [velocity release];
     [position release];

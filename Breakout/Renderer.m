@@ -19,11 +19,24 @@
 }
 
 - (void) initialize {
-    float scaleX = (float)self.game.gameWindow.clientBounds.width / (float)gameplay.level.bounds.width;
-    float scaleY = (float)self.game.gameWindow.clientBounds.height / (float)gameplay.level.bounds.height;
-    camera = [[Matrix createScale:[Vector3 vectorWithX:scaleX y:scaleY z:1]] retain];
+//    float scaleX = (float)self.game.gameWindow.clientBounds.width / (float)gameplay.level.bounds.width;
+//    float scaleY = (float)self.game.gameWindow.clientBounds.height / (float)gameplay.level.bounds.height;
+//    camera = [[Matrix createScale:[Vector3 vectorWithX:scaleX y:scaleY z:1]] retain];
+    
+    float scaleX = 1;
+    float scaleY = 1;
+    if (gameplay == nil) {
+        float aspectRatio = (float)self.game.gameWindow.clientBounds.width / (float)self.game.gameWindow.clientBounds.height;
+        Rectangle *bounds = [[Rectangle alloc] initWithX:0 y:0 width:1000 height:1000/aspectRatio];
+        scaleX = (float)self.game.gameWindow.clientBounds.width / bounds.width;
+        scaleY = (float)self.game.gameWindow.clientBounds.height / bounds.height;
+    } else {
+        scaleX = (float)self.game.gameWindow.clientBounds.width / (float)gameplay.level.bounds.width;
+        scaleY = (float)self.game.gameWindow.clientBounds.height / (float)gameplay.level.bounds.height;
+    }
     
     NSLog(@"[renderer] scalex: %f, scaley: %f", scaleX, scaleY);
+    camera = [[Matrix createScale:[Vector3 vectorWithX:scaleX y:scaleY z:1]] retain];
     
     [super initialize];
 }
@@ -148,7 +161,7 @@
             row = 0;
             column = 7;
         } else {
-            continue;
+            //continue;
             row = 1;
             column = 7;
         }
@@ -158,7 +171,7 @@
         sprite.sourceRectangle = [Rectangle rectangleWithX:row * 72 y:column * 72 width:72 height:72];
         sprite.origin = [Vector2 vectorWithX:sprite.sourceRectangle.width / 2 y:sprite.sourceRectangle.height / 2];
         
-        AnimatedSpriteFrame *frame = [AnimatedSpriteFrame frameWithSprite:sprite start:playerSwordAttackAnimatedSprite.duration * (float)i / 2];
+        AnimatedSpriteFrame *frame = [AnimatedSpriteFrame frameWithSprite:sprite start:playerSwordAttackAnimatedSprite.duration * (float)i / 3];
         
         //
         // duration * (0 / 3) = 0   1.slika
